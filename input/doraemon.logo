@@ -1,0 +1,83 @@
+@SIZE 1620 2400
+@BACKGROUND 100 100 200
+@POSITION 810 200
+
+SIZE 2
+
+FUNC circle (size,x,num)
+LOOP num
+	MOVE size
+	TURN x
+END LOOP
+END FUNC
+
+TURN -90
+CLOAK
+CALL circle(7, 1, 40)
+CALL circle(5,1,35)
+CALL circle(6,1,60)
+TURN 180
+COLOR
+CALL circle(6, -1, 60)
+CALL circle(5,-1,35)
+CALL circle(7,-1,40)
+CALL circle(7, -1, 40)
+CALL circle(5,-1,35)
+CALL circle(6,-1,60)
+TURN -35
+CALL circle (26, -1, 20)
+MOVE 5
+TURN -40
+CLOAK
+TURN -30
+MOVE 20
+FILL 255 255 255
+TURN 180
+MOVE 20
+TURN 180
+TURN 30
+COLOR
+CALL circle(6, -1, 50)
+CALL circle(2,-1,50)
+CALL circle(5,-1,15)
+TURN 90
+CALL circle(3,-1,30)
+CALL circle(1.5,-1,120)
+CALL circle(3,-1,60)
+CALL circle(1.5,-1,120)
+CALL circle(3,-1,30)
+CLOAK
+TURN 30
+MOVE 20
+FILL 150 2000 250
+TURN 180
+MOVE 20
+TURN 180
+TURN -30
+TURN -115
+MOVE 158
+TURN 85
+COLOR
+SIZE 20
+CALL circle(1.5,1,60)
+CALL circle(0.5,1,120)
+CALL circle(1.5,1,60)
+CALL circle(0.5,1,120)
+CLOAK
+SIZE 2
+TURN -15
+MOVE 75
+COLOR
+TURN -60
+
+MOVE 70
+
+CLOAK
+TURN -15
+MOVE 75
+COLOR
+SIZE 20
+CALL circle(1.5,1,60)
+CALL circle(0.5,1,120)
+CALL circle(1.5,1,60)
+CALL circle(0.5,1,120)

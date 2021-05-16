@@ -1,0 +1,30 @@
+@SIZE 1920  1080
+@BACKGROUND 255 255 255
+@POSITION 100 500
+COLOR  0 0 0
+DEF a  20
+SIZE a
+FUNC figure (wid)
+    SIZE wid
+    LOOP    12
+           MOVE    40
+           TURN    30
+     END   LOOP
+END FUNC
+
+TURN 30 
+MOVE 100
+ADD a -20
+SIZE a
+TURN  60
+LOOP 5
+    CLOAK
+    MOVE 300
+    COLOR 0 0 0
+    CALL figure ( a )
+    ADD a 5
+    SIZE a
+END LOOP
+
+
+
